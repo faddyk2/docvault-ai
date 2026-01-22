@@ -111,7 +111,9 @@ From the root directory:
 npm start
 ```
 
-Or start backend and frontend separately:
+This will start both backend and frontend simultaneously using concurrently.
+
+Alternatively, start them separately:
 
 ```bash
 cd backend && npm run dev
