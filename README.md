@@ -169,7 +169,7 @@ Create `backend/.env` from `backend/.env.example`:
 | `OPENAI_API_KEY` | Your OpenAI API key for AI responses | Yes |
 | `JWT_SECRET` | Secret key for JWT token signing | Yes |
 | `DATABASE_URL` | SQLite database file path | Yes |
-| `OPENAI_MODEL` | OpenAI model to use (default: gpt-4o-mini) | No |
+| `MODEL_NAME` | OpenAI model to use (default: gpt-4o-mini) | No |
 | `PORT` | Backend server port (default: 5001) | No |
 | `FRONTEND_URL` | Frontend URL for CORS (default: http://localhost:3000) | No |
 | `OPENAI_BASE_URL` | Custom OpenAI base URL if using proxy | No |
