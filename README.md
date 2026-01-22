@@ -68,8 +68,11 @@ JWT_SECRET=your_secret_jwt_key_here_change_in_production
 To use OpenAI directly without a proxy:
 1. Get your API key from https://platform.openai.com/api-keys
 2. In `backend/.env`, set `OPENAI_API_KEY=sk-your-actual-key`
-3. Remove or leave `OPENAI_BASE_URL` empty to use the default OpenAI endpoint
-4. The system will automatically use https://api.openai.com/v1
+3. Leave `OPENAI_BASE_URL` unset to use the default OpenAI endpoint
+
+To use a custom proxy or LiteLLM:
+1. Set `OPENAI_BASE_URL=your-proxy-url` in `backend/.env`
+2. Use the appropriate model name for your proxy
 
 **Frontend configuration:**
 
