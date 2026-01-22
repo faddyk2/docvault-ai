@@ -2,6 +2,14 @@
 
 A full-stack Knowledge Base Management System with RAG (Retrieval-Augmented Generation) capabilities, featuring document upload, intelligent chunking, vector search with FAISS, and AI-powered querying.
 
+## Use Case
+
+**For Administrators:**
+Manage your organization's knowledge base by uploading documents (PDFs, DOCX, text files), organizing them with tags, and building a searchable repository. Control user access and manage the document library.
+
+**For Users:**
+Query the knowledge base using natural language questions. Get AI-powered answers backed by relevant document excerpts without needing to search through files manually.
+
 ## Features
 
 - **Document Management**: Upload and manage PDF, DOCX, TXT, and HTML documents
@@ -58,21 +66,21 @@ cd backend
 cp .env.example .env
 ```
 
-Edit `backend/.env` and add your API keys:
+Edit `backend/.env` and configure:
 
 ```env
 OPENAI_API_KEY=your_openai_api_key_here
 JWT_SECRET=your_secret_jwt_key_here_change_in_production
+DATABASE_URL=file:./dev.db
 ```
 
-To use OpenAI directly without a proxy:
-1. Get your API key from https://platform.openai.com/api-keys
-2. In `backend/.env`, set `OPENAI_API_KEY=sk-your-actual-key`
-3. Leave `OPENAI_BASE_URL` unset to use the default OpenAI endpoint
+**Required variables:**
+- `OPENAI_API_KEY`: Get from https://platform.openai.com/api-keys
+- `JWT_SECRET`: Any random string for securing authentication
+- `DATABASE_URL`: SQLite database file path (default: `file:./dev.db`)
 
-To use a custom proxy or LiteLLM:
-1. Set `OPENAI_BASE_URL=your-proxy-url` in `backend/.env`
-2. Use the appropriate model name for your proxy
+**Optional:**
+- `OPENAI_BASE_URL`: Set only if using a proxy/LiteLLM (leave unset for direct OpenAI)
 
 **Frontend configuration:**
 
@@ -114,6 +122,20 @@ The application will be available at:
 - Frontend: http://localhost:3000
 - Backend API: http://localhost:5001
 
+## Screenshots
+
+### Login Page
+
+
+### Admin Dashboard - Document Management
+
+
+### User Interface - Query Chat
+
+
+### Document Upload
+
+
 ## Configuration
 
 ### Backend Environment Variables
@@ -124,10 +146,10 @@ Create `backend/.env` from `backend/.env.example`:
 |----------|-------------|----------|
 | `OPENAI_API_KEY` | Your OpenAI API key for AI responses | Yes |
 | `JWT_SECRET` | Secret key for JWT token signing | Yes |
+| `DATABASE_URL` | SQLite database file path | Yes |
 | `PORT` | Backend server port (default: 5001) | No |
 | `FRONTEND_URL` | Frontend URL for CORS (default: http://localhost:3000) | No |
 | `OPENAI_BASE_URL` | Custom OpenAI base URL if using proxy | No |
-| `DATABASE_URL` | Database connection string | No |
 
 ### Frontend Environment Variables
 
