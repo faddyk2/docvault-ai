@@ -22,7 +22,7 @@ class OpenAIService {
       const {
         temperature = 0.7,
         maxTokens = 1000,
-        model = 'gpt-4o-mini'
+        model = process.env['Model_Name']
       } = options;
 
       const currentDate = new Date().toISOString().split('T')[0];

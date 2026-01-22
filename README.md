@@ -1,23 +1,30 @@
-# Knowledge Base Chatbot
+# DocVault AI - Internal Knowledge Base System
 
-A full-stack Knowledge Base Management System with RAG (Retrieval-Augmented Generation) capabilities, featuring document upload, intelligent chunking, vector search with FAISS, and AI-powered querying.
+Transform your company's SOPs, policies, manuals, and internal documentation into an intelligent, searchable knowledge base. Built with RAG technology to provide instant, accurate answers from your organization's documents.
 
-## Use Case
+## Perfect For
 
-**For Administrators:**
-Manage your organization's knowledge base by uploading documents (PDFs, DOCX, text files), organizing them with tags, and building a searchable repository. Control user access and manage the document library.
+**Internal Documentation & SOPs:**
+Centralize your company's Standard Operating Procedures, HR policies, compliance documents, training materials, and process manuals. Enable employees to get instant answers without digging through folders.
 
-**For Users:**
-Query the knowledge base using natural language questions. Get AI-powered answers backed by relevant document excerpts without needing to search through files manually.
+**Employee Self-Service:**
+Employees can query policies, procedures, and guidelines using natural language. Get accurate answers with source references, reducing support tickets and time spent searching.
+
+**Onboarding & Training:**
+New hires can quickly find answers about company policies, procedures, and guidelines. Reduce onboarding time and improve knowledge retention.
+
+**Compliance & Audit:**
+Maintain version-controlled documentation with clear audit trails. Ensure employees always access the most current policies and procedures.
 
 ## Features
 
-- **Document Management**: Upload and manage PDF, DOCX, TXT, and HTML documents
-- **Vector Search**: FAISS-powered semantic search with HuggingFace embeddings
-- **AI-Powered Chat**: Query your knowledge base with context-aware responses
-- **User Authentication**: JWT-based auth with role-based access control
-- **Modern UI**: React-based responsive interface with drag-and-drop uploads
-- **Video Management**: Support for video content organization
+- **SOP & Policy Management**: Upload company SOPs, policies, manuals in PDF, DOCX, TXT, HTML
+- **Semantic Search**: Find information even with different wording using FAISS vector search
+- **Natural Language Q&A**: Ask questions in plain English, get accurate answers with sources
+- **Role-Based Access**: Admin manages documents, employees query safely
+- **Drag & Drop Upload**: Easy document management with modern interface
+- **Source Citations**: Every answer includes relevant document excerpts for verification
+- **Video & Media Support**: Organize training videos and multimedia content
 
 ## Tech Stack
 
@@ -127,15 +134,28 @@ The application will be available at:
 ## Screenshots
 
 ### Login Page
+<img width="1895" height="916" alt="image" src="https://github.com/user-attachments/assets/89e27ebf-0449-482c-9a44-4dabf68808f3" />
 
+## Admin Side:
 
 ### Admin Dashboard - Document Management
-
-
-### User Interface - Query Chat
-
+<img width="1321" height="857" alt="image" src="https://github.com/user-attachments/assets/05e23c49-2c8a-41a9-b3ed-2f0fff88c53b" />
 
 ### Document Upload
+<img width="1292" height="721" alt="image" src="https://github.com/user-attachments/assets/50ee44ec-7c7a-46cd-b60b-e902c7cc0a82" />
+
+### Videos Upload - To be referenced with similar queries 
+<img width="1268" height="845" alt="image" src="https://github.com/user-attachments/assets/e8d9736f-d3c5-4aa5-a317-0b039a27eb7d" />
+
+### User Management
+<img width="1256" height="739" alt="image" src="https://github.com/user-attachments/assets/b4865f22-a717-4a84-af05-9ea4041f78b1" />
+
+
+## User Side
+### User Interface - Query Chat
+<img width="1269" height="805" alt="image" src="https://github.com/user-attachments/assets/d336085c-22bf-4682-8a0e-9f12855b6ca9" />
+
+
 
 
 ## Configuration
