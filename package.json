@@ -1,0 +1,22 @@
+{
+  "name": "kb-chatbot",
+  "version": "1.0.0",
+  "description": "Knowledge Base Management System with RAG capabilities",
+  "scripts": {
+    "setup": "npm install && cd backend && npm install && cd ../client && npm install",
+    "start": "cd backend && npm start & cd client && npm start"
+  },
+  "keywords": [
+    "knowledge-base",
+    "rag",
+    "chatbot",
+    "embeddings",
+    "faiss"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/faddyk2/docvault-ai.git"
+  }
+}
